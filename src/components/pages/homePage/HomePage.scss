@@ -1,0 +1,85 @@
+@import './../../../styles/mixins.scss';
+@import './../../../styles/customVariables.scss';
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100%;
+  background-size: 100% 100%;
+
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    width: 40%;
+    margin-left: 2rem;
+
+    .title {
+      flex: 1;
+      font-size: 2rem;
+      font-weight: 600;
+      min-width: 19rem;
+    }
+
+    .score {
+      color: $text-color;
+      opacity: 0.5;
+      font-weight: 600;
+    }
+
+    .button {
+      background-color: $accent-color;
+      border-radius: 0.6rem;
+      color: #fff;
+      width: 296px;
+
+      &:hover {
+        background-color: $hover-color;
+      }
+
+      &:active {
+        background-color: $active-color;
+      }
+    }
+  }
+}
+
+@media (max-width: $bp_lg) {
+  .home {
+    .section {
+      flex-direction: column;
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin: 0 1rem;
+
+      .title {
+        text-align: center;
+        margin: 32px 16px;
+        min-width: 10rem;
+      }
+
+      .score {
+        margin-top: 32px;
+      }
+
+      .button {
+        margin-top: 70px;
+        width: 90%;
+      }
+    }
+  }
+}

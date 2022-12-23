@@ -1,0 +1,209 @@
+[
+  {
+    "question": "When will Ukraine win the war?",
+    "options": [
+      {
+        "letter": "A",
+        "option": "February 24, 2023"
+      },
+      {
+        "letter": "B",
+        "option": "January 1, 2023"
+      },
+      {
+        "letter": "C",
+        "option": "On Easter"
+      },
+      {
+        "letter": "D",
+        "option": "In the near future"
+      }
+    ],
+    "correctOption": ["D"],
+    "remuneration": "$1,000"
+  },
+  {
+    "question": "Who will win the soccer world cup?",
+    "options": [
+      {
+        "letter": "A",
+        "option": "France"
+      },
+      {
+        "letter": "B",
+        "option": "Portugal"
+      },
+      {
+        "letter": "C",
+        "option": "Poland"
+      },
+      {
+        "letter": "D",
+        "option": "Argentina"
+      }
+    ],
+    "correctOption": ["D"],
+    "remuneration": "$5,000"
+  },
+  {
+    "question": "When will Ukraine win the war?",
+    "options": [
+      {
+        "letter": "A",
+        "option": "February 24, 2023"
+      },
+      {
+        "letter": "B",
+        "option": "January 1, 2023"
+      },
+      {
+        "letter": "C",
+        "option": "On Easter"
+      },
+      {
+        "letter": "D",
+        "option": "In the near future"
+      }
+    ],
+    "correctOption": ["D"],
+    "remuneration": "$20,000"
+  },
+  {
+    "question": "When will Ukraine win the war?",
+    "options": [
+      {
+        "letter": "A",
+        "option": "February 24, 2023"
+      },
+      {
+        "letter": "B",
+        "option": "January 1, 2023"
+      },
+      {
+        "letter": "C",
+        "option": "On Easter"
+      },
+      {
+        "letter": "D",
+        "option": "In the near future"
+      }
+    ],
+    "correctOption": ["D"],
+    "remuneration": "$50,000"
+  },
+  {
+    "question": "When will Ukraine win the war?",
+    "options": [
+      {
+        "letter": "A",
+        "option": "February 24, 2023"
+      },
+      {
+        "letter": "B",
+        "option": "January 1, 2023"
+      },
+      {
+        "letter": "C",
+        "option": "On Easter"
+      },
+      {
+        "letter": "D",
+        "option": "In the near future"
+      }
+    ],
+    "correctOption": ["D"],
+    "remuneration": "$100,000"
+  },
+  {
+    "question": "When will Ukraine win the war?",
+    "options": [
+      {
+        "letter": "A",
+        "option": "February 24, 2023"
+      },
+      {
+        "letter": "B",
+        "option": "January 1, 2023"
+      },
+      {
+        "letter": "C",
+        "option": "On Easter"
+      },
+      {
+        "letter": "D",
+        "option": "In the near future"
+      }
+    ],
+    "correctOption": ["D"],
+    "remuneration": "$300,000"
+  },
+  {
+    "question": "When will Ukraine win the war?",
+    "options": [
+      {
+        "letter": "A",
+        "option": "February 24, 2023"
+      },
+      {
+        "letter": "B",
+        "option": "January 1, 2023"
+      },
+      {
+        "letter": "C",
+        "option": "On Easter"
+      },
+      {
+        "letter": "D",
+        "option": "In the near future"
+      }
+    ],
+    "correctOption": ["D"],
+    "remuneration": "$500,000"
+  },
+  {
+    "question": "When will Ukraine win the war?",
+    "options": [
+      {
+        "letter": "A",
+        "option": "February 24, 2023"
+      },
+      {
+        "letter": "B",
+        "option": "January 1, 2023"
+      },
+      {
+        "letter": "C",
+        "option": "On Easter"
+      },
+      {
+        "letter": "D",
+        "option": "In the near future"
+      }
+    ],
+    "correctOption": ["D"],
+    "remuneration": "$700,000"
+  },
+  {
+    "question": "Who will win the soccer world cup?",
+    "options": [
+      {
+        "letter": "A",
+        "option": "Argentina"
+      },
+      {
+        "letter": "B",
+        "option": "Portugal"
+      },
+      {
+        "letter": "C",
+        "option": "Poland"
+      },
+      {
+        "letter": "D",
+        "option": "France"
+      }
+    ],
+    "correctOption": ["A"],
+    "remuneration": "$1,000,000"
+  }
+]

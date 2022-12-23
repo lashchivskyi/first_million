@@ -1,0 +1,89 @@
+@import './../../../styles/mixins.scss';
+@import './../../../styles/customVariables.scss';
+
+.game {
+  display: flex;
+  height: 100%;
+  background-color: $game-bg-color;
+
+  .wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    height: 80%;
+    margin: auto 0;
+
+    .title {
+      flex: 1;
+    }
+
+    .answers {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1886px;
+      align-items: initial;
+    }
+  }
+
+  .win {
+    width: 376px;
+    background-color: #fff;
+    display: flex;
+    height: 100%;
+    right: 0;
+  }
+}
+
+@media (max-width: $bp_sm) {
+  .game {
+    .wrapper {
+      padding: 0 33px;
+      height: 90%;
+    }
+
+    .win {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $bp_lg) {
+  .game {
+    .wrapper {
+      padding: 0 33px;
+
+      .title {
+        flex: initial;
+        margin: auto;
+      }
+
+      .answers {
+        align-items: center;
+      }
+    }
+
+    .overlay {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+
+      &--open {
+        display: flex;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: $bp_xl) {
+  .game {
+    .wrapper {
+      .answers {
+        flex-direction: column;
+      }
+    }
+  }
+}

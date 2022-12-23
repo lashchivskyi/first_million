@@ -1,0 +1,52 @@
+@import './../../../styles/mixins.scss';
+@import './../../../styles/customVariables.scss';
+
+.rewardsList {
+  margin: auto 0;
+  width: 100%;
+
+  .text {
+    z-index: 1;
+  }
+
+  .item {
+    height: 40px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include hexagon(100%, 47px, -46px, 3px, -47px, 8px);
+
+    &:not(:last-child) {
+      margin-bottom: 0.4rem;
+    }
+
+    &--current {
+      color: $accent-color;
+
+      @include hexagonColored($accent-color);
+    }
+
+    &--previous {
+      color: $hexagon-border;
+    }
+
+    @media (max-width: 510px) {
+      height: 32px;
+
+      .top-hexagon::before,
+      .bottom-hexagon::before {
+        width: 70px;
+      }
+
+      .top-hexagon::before {
+        left: -70px;
+      }
+
+      .bottom-hexagon::before {
+        right: -70px;
+      }
+    }
+  }
+}

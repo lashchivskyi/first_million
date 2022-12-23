@@ -1,0 +1,129 @@
+@import './../../../styles/mixins.scss';
+@import './../../../styles/customVariables.scss';
+
+.answerBtn {
+  flex-basis: 35%;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  height: 72px;
+  background-color: inherit;
+  max-width: 568px;
+
+  &:nth-child(odd) {
+    margin-right: 4.6rem;
+  }
+
+  @include hexagon(110%, 18px, -17px, 6px, -16px, 20px);
+
+  .letter {
+    color: $accent-color;
+    z-index: 1;
+  }
+
+  .text {
+    display: inline-block;
+    margin-left: 0.5rem;
+    text-transform: capitalize;
+    text-align: left;
+    z-index: 1;
+  }
+
+  &--selected {
+    @include hexagonColored($accent-color, $selected-answer-color);
+
+    &:hover {
+      @include hexagonColored($accent-color, $selected-answer-color);
+    }
+  }
+
+  &--correct {
+    @include hexagonColored($hexagon-correct-border, $correct-answer-color);
+
+    &:hover {
+      @include hexagonColored($hexagon-correct-border, $correct-answer-color);
+    }
+  }
+
+  &--wrong {
+    @include hexagonColored($hexagon-wrong-border, $wrong-answer-color);
+
+    &:hover {
+      @include hexagonColored($hexagon-wrong-border, $wrong-answer-color);
+    }
+  }
+
+  @media (max-width: 1900px) {
+    .topHexagon,
+    .bottomHexagon {
+      width: 111%;
+    }
+  }
+
+  @media (max-width: $bp_xxxl) {
+    .topHexagon,
+    .bottomHexagon {
+      width: 114%;
+    }
+  }
+
+  @media (max-width: $bp_xxl) {
+    .topHexagon,
+    .bottomHexagon {
+      width: 118%;
+    }
+  }
+
+  @media (max-width: $bp_xl) {
+    flex-basis: inherit;
+    width: 70%;
+
+    &:nth-child(odd) {
+      margin-right: 0rem;
+    }
+  }
+
+  @media (max-width: $bp_lg) {
+    .topHexagon,
+    .bottomHexagon {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: $bp_md) {
+    .topHexagon {
+      transform: perspective(12px) rotateX(3deg);
+    }
+
+    .bottomHexagon {
+      transform: perspective(12px) rotateX(-3deg);
+    }
+  }
+
+  @media (max-width: $bp_sm) {
+    height: 56px;
+    width: 100%;
+
+    .topHexagon::before,
+    .bottomHexagon::before {
+      width: 26px;
+      height: 1px;
+    }
+
+    .topHexagon {
+      transform: perspective(10px) rotateX(3deg);
+
+      &::before {
+        left: -24px;
+      }
+    }
+
+    .bottomHexagon {
+      transform: perspective(10px) rotateX(-3deg);
+
+      &::before {
+        right: -24px;
+      }
+    }
+  }
+}
