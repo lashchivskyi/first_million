@@ -59,7 +59,7 @@ const OptionButton = ({ letter, text, currentQuestion, nextQuestion, finishGame 
       setTimeout(() => {
         setSelected(false);
         currentQuestion.correctOption.includes(letter) ? handleCorrectAnswer() : handleWrongAnswer();
-      }, 2000);
+      }, 1000);
     },
     [currentQuestion.correctOption, handleCorrectAnswer, handleWrongAnswer],
   );
@@ -81,7 +81,13 @@ const OptionButton = ({ letter, text, currentQuestion, nextQuestion, finishGame 
   }
 
   return (
-    <button className={classNames('answerBtn', `answerBtn--${stateClass}`)} onClick={handleClick} data-letter={letter}>
+    <button
+      className={classNames('answerBtn', `answerBtn--${stateClass}`)}
+      type="submit"
+      disabled={selected}
+      onClick={handleClick}
+      data-letter={letter}
+    >
       <span className="topHexagon"></span>
       <span className="letter">{letter}</span>
       <span className="text">{text}</span>
