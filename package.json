@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "yarn build",
+    "predeploy": "npm run build",
     "deploy": "main -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",

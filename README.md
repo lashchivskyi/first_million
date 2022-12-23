@@ -1,1 +1,1 @@
-[link]: https://lashchivskyi.github.io/first_million/
+https://lashchivskyi.github.io/first_million/
